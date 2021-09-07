@@ -2,11 +2,11 @@
 // declerative pipline
 pipeline {
 	agent any
-	enviroment {
-		dockerHome = tool 'khalidDocker'
-		maveenHome = tool 'khalidMaveen'
-		PATH="$dockerHome/bin:$maveenHome/bin:$path"
-	}
+		enviroment {
+			dockerHome = tool 'khalidDocker'
+			maveenHome = tool 'khalidMaveen'
+			PATH="$dockerHome/bin:$maveenHome/bin:$path"
+		}
 	//agent { docker { image 'node:13.8'}}
 			stages {
 				stage ('build'){
