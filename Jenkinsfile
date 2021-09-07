@@ -7,4 +7,24 @@ agent {
         args  '-v /tmp:/tmp'
     }
 }
+
+stages {
+				stage ('build'){
+					steps {
+					sh 'mvn --version'
+					echo "Build"
+					
+				}
+			}
+			stage ('Test'){
+					steps {
+					echo "Test "
+				}
+			}
+			stage ('Intgartion Test'){
+					steps {
+					echo "Intgartion test"
+				}
+			}
+		}
 }
