@@ -1,13 +1,19 @@
 // Scipted type code
 // declerative pipline
 pipeline {
-	//agent any
-	agent { docker { image 'node:13.8'}}
+	agent any
+	//agent { docker { image 'node:13.8'}}
 			stages {
 				stage ('build'){
 					steps {
-					sh 'node --version'
+		
 					echo "Build"
+					echo " Build_Path  - $path"
+					echo "Build_Number - $env.BUILD_NUMBER"
+					echo "Build_Id  - $env.BUILD_ID"
+					echo "Build_NAME  - $env.JOB_NAME"
+					echo "Build_TAG - $env.BUILD_TAG"
+					echo "Build_URL  - $env.BUILD_URL"
 					
 				}
 			}
