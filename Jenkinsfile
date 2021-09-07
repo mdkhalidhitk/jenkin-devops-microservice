@@ -1,3 +1,4 @@
+// Scipted type code
 node {
 	stage('Build') {
 		echo "Build"
