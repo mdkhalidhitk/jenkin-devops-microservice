@@ -1,4 +1,4 @@
-// Scipted type code
+// Scipted type code  password : e193c491ffff4a54bdbd861cbf84e092
 // declerative pipline
 pipeline {
 	//agent any
