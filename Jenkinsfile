@@ -1,6 +1,6 @@
 // Scipted type code
 // declerative pipline
-pipline {
+pipeline {
 	agent any
 	stages {
 		stage ('build'){
